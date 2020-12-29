@@ -1,7 +1,7 @@
 Zoom
 ================
 
-[![Build Status](https://travis-ci.org/joaosoft/validator.svg?branch=master)](https://travis-ci.org/joaosoft/validator) | [![codecov](https://codecov.io/gh/joaosoft/validator/branch/master/graph/badge.svg)](https://codecov.io/gh/joaosoft/validator) | [![Go Report Card](https://goreportcard.com/badge/github.com/joaosoft/validator)](https://goreportcard.com/report/github.com/joaosoft/validator) | [![GoDoc](https://godoc.org/github.com/joaosoft/validator?status.svg)](https://godoc.org/github.com/joaosoft/validator)
+[![Build Status](https://travis-ci.org/joaosoft/zoom.svg?branch=master)](https://travis-ci.org/joaosoft/zoom) | [![codecov](https://codecov.io/gh/joaosoft/zoom/branch/master/graph/badge.svg)](https://codecov.io/gh/joaosoft/zoom) | [![Go Report Card](https://goreportcard.com/badge/github.com/joaosoft/zoom)](https://goreportcard.com/report/github.com/joaosoft/zoom) | [![GoDoc](https://godoc.org/github.com/joaosoft/zoom?status.svg)](https://godoc.org/github.com/joaosoft/zoom)
 
 A simple client for zoom api.
 
@@ -30,7 +30,7 @@ go get github.com/joaosoft/zoom
 ```
 
 ## Usage 
-This examples are available in the project at [validator/examples](https://github.com/joaosoft/validator/tree/master/examples)
+This examples are available in the project at [zoom/examples](https://github.com/joaosoft/zoom/tree/master/examples)
 
 ### Code
 ```go
