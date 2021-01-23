@@ -17,9 +17,6 @@ A simple client for zoom api.
 
 ###### If i miss something or you have something interesting, please be part of this project. Let me know! My contact is at the end.
 
-## With support for zooms
-* "-"
-
 ## Dependency Management
 >### Dep
 
