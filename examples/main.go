@@ -58,9 +58,9 @@ func createUser() (*zoom.User, error) {
 			FirstName: "João",
 			LastName:  "Ribeiro",
 			Email:     "joaosoft@gmail.com",
-			Type:      zoom.TypeBasic,
+			Type:      zoom.UserTypeBasic,
 		},
-		Action: zoom.ActionCustCreate,
+		Action: zoom.UserCreateActionCustCreate,
 	})
 }
 

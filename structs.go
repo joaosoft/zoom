@@ -19,7 +19,7 @@ type (
 		Enabled   bool
 	}
 
-	requestOpts struct {
+	requestOptions struct {
 		Client         *Client
 		Method         string
 		URLParameters  interface{}
@@ -68,7 +68,7 @@ type (
 		ScheduleForReminder bool   `url:"schedule_for_reminder,omitempty"`
 	}
 
-	Type int
+	UserType int
 
 	MeetingType            int
 	MeetingStatus          string
@@ -141,8 +141,8 @@ type (
 
 	// user
 	CreateUserOptions struct {
-		Action   Action   `json:"action,omitempty"`
-		UserInfo UserInfo `json:"user_info,omitempty"`
+		Action   UserCreateAction `json:"action,omitempty"`
+		UserInfo UserInfo         `json:"user_info,omitempty"`
 	}
 
 	GetUserOpts struct {
@@ -156,13 +156,13 @@ type (
 
 	UserLoginType int
 
-	Action string
+	UserCreateAction string
 
 	UserInfo struct {
-		FirstName string `json:"first_name,omitempty"`
-		LastName  string `json:"last_name,omitempty"`
-		Email     string `json:"email,omitempty"`
-		Type      Type   `json:"type,omitempty"`
+		FirstName string   `json:"first_name,omitempty"`
+		LastName  string   `json:"last_name,omitempty"`
+		Email     string   `json:"email,omitempty"`
+		Type      UserType `json:"type,omitempty"`
 	}
 
 	User struct {

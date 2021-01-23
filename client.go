@@ -25,7 +25,7 @@ func Init(config *Config, options ...Option) {
 	defaultClient.Reconfigure(options...)
 }
 
-func (c *Client) executeRequest(opts *requestOpts) (*http.Response, error) {
+func (c *Client) executeRequest(opts *requestOptions) (*http.Response, error) {
 	client := c.httpClient()
 	req, err := c.addRequestAuth(c.httpRequest(opts))
 	if err != nil {
@@ -37,7 +37,7 @@ func (c *Client) executeRequest(opts *requestOpts) (*http.Response, error) {
 	return client.Do(req)
 }
 
-func (c *Client) httpRequest(opts *requestOpts) (*http.Request, error) {
+func (c *Client) httpRequest(opts *requestOptions) (*http.Request, error) {
 	var buf bytes.Buffer
 
 	// encode body parameters if any
@@ -67,7 +67,7 @@ func (c *Client) httpClient() *http.Client {
 	return client
 }
 
-func (c *Client) request(opts *requestOpts) error {
+func (c *Client) request(opts *requestOptions) error {
 	if !c.config.Enabled {
 		return nil
 	}
@@ -92,7 +92,7 @@ func (c *Client) request(opts *requestOpts) error {
 	return nil
 }
 
-func (c *Client) requestWithBody(opts *requestOpts, resp *http.Response) error {
+func (c *Client) requestWithBody(opts *requestOptions, resp *http.Response) error {
 	// read HTTP response
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)

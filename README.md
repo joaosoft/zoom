@@ -11,12 +11,16 @@ A simple client for zoom api.
 * Create
 * Delete
 
+### Users
+* Create
+* Delete
+
 ###### If i miss something or you have something interesting, please be part of this project. Let me know! My contact is at the end.
 
 ## With support for zooms
 * "-"
 
-## Dependecy Management
+## Dependency Management
 >### Dep
 
 Project dependencies are managed using Dep. Read more about [Dep](https://github.com/golang/dep).

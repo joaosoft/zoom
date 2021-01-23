@@ -7,7 +7,7 @@ import (
 
 func CreateMeeting(opts *CreateMeetingOptions) (*Meeting, error) {
 	var ret = &Meeting{}
-	return ret, defaultClient.request(&requestOpts{
+	return ret, defaultClient.request(&requestOptions{
 		Method:         http.MethodPost,
 		Path:           fmt.Sprintf(createMeetingPath, opts.UserID),
 		DataParameters: &opts,
@@ -16,7 +16,7 @@ func CreateMeeting(opts *CreateMeetingOptions) (*Meeting, error) {
 }
 
 func DeleteMeeting(opts *DeleteMeetingOptions) error {
-	return defaultClient.request(&requestOpts{
+	return defaultClient.request(&requestOptions{
 		Method:        http.MethodDelete,
 		Path:          fmt.Sprintf(deleteMeetingPath, opts.MeetingID),
 		URLParameters: &opts,

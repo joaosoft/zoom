@@ -7,7 +7,7 @@ import (
 
 func GetUser(opts *GetUserOpts) (*User, error) {
 	var ret = &User{}
-	return ret, defaultClient.request(&requestOpts{
+	return ret, defaultClient.request(&requestOptions{
 		Method:        http.MethodGet,
 		Path:          fmt.Sprintf(getUserPath, opts.EmailOrID),
 		URLParameters: opts,
@@ -17,7 +17,7 @@ func GetUser(opts *GetUserOpts) (*User, error) {
 
 func CreateUser(opts *CreateUserOptions) (*User, error) {
 	var ret = &User{}
-	return ret, defaultClient.request(&requestOpts{
+	return ret, defaultClient.request(&requestOptions{
 		Method:         http.MethodPost,
 		Path:           createUserPath,
 		DataParameters: &opts,
@@ -26,7 +26,7 @@ func CreateUser(opts *CreateUserOptions) (*User, error) {
 }
 
 func DeleteUser(opts *DeleteUserOptions) error {
-	return defaultClient.request(&requestOpts{
+	return defaultClient.request(&requestOptions{
 		Method:        http.MethodDelete,
 		Path:          fmt.Sprintf(deleteUserPath, opts.UserID),
 		URLParameters: &opts,

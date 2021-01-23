@@ -1,10 +1,6 @@
 package zoom
 
 const (
-	colorGreen = "\033[32m"
-	colorRed   = "\033[31m"
-	colorReset = "\033[0m"
-
 	// api
 	apiScheme  = "https"
 	apiURI     = "api.zoom.us"
@@ -18,14 +14,9 @@ const (
 	addUserToGroupPath = "/groups/%s/members"
 	getUserPath        = "/users/%s"
 
-	// Defaults
-	DefaultMeetingDuration           = 60
-	jwtAlgorithmKey                  = "alg"
-	jwtTypeKey                       = "typ"
-	jwtAlgorithm                     = "HS256"
-	jwtType                          = "JWT"
+	// defaults
 	headerAuthorization              = "Authorization"
-	headerContentType                = "Content-Type"
+	headerContentType                = "Content-UserType"
 	headerContentTypeApplicationJson = "application/json"
 	headerValueBearer                = "Bearer %s"
 
@@ -54,9 +45,9 @@ const (
 
 	// RegistrationTypeRegisterOnce Attendees register once and can attend any of the occurrences
 	RegistrationTypeRegisterOnce RegistrationType = 1
-	//RegistrationTypeRegisterEachTime  Attendeed need to register for each occurrence to attend
+	// RegistrationTypeRegisterEachTime  Attendeed need to register for each occurrence to attend
 	RegistrationTypeRegisterEachTime RegistrationType = 2
-	//RegistrationTypeRegisterOnceAndChooseOccurrences Attendees register once and can choose one or more occurrences to attend
+	// RegistrationTypeRegisterOnceAndChooseOccurrences Attendees register once and can choose one or more occurrences to attend
 	RegistrationTypeRegisterOnceAndChooseOccurrences RegistrationType = 3
 
 	// AudioBoth is a meeting that allows telephony and VoIP
@@ -113,17 +104,17 @@ const (
 	WeekDaySaturday WeekDay = 7
 
 	// create user actions
-	ActionCreate     Action = "create"
-	ActionAutoCreate Action = "autoCreate"
-	ActionCustCreate Action = "custCreate"
-	ActionSsoCreate  Action = "ssoCreate"
+	UserCreateActionCreate     UserCreateAction = "create"
+	UserCreateActionAutoCreate UserCreateAction = "autoCreate"
+	UserCreateActionCustCreate UserCreateAction = "custCreate"
+	UserCreateActionSsoCreate  UserCreateAction = "ssoCreate"
 
-	// User types
-	TypeBasic    Type = 1
-	TypeLicensed Type = 2
-	TypeOnPrem   Type = 3
+	// user types
+	UserTypeBasic    UserType = 1
+	UserTypeLicensed UserType = 2
+	UserTypeOnPrem   UserType = 3
 
-	// User login types
+	// user login types
 	Facebook UserLoginType = 0   // Facebook user login type
 	Google   UserLoginType = 1   // Google user login type
 	API      UserLoginType = 99  // API user login type
