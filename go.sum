@@ -1,0 +1,12 @@
+github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/joaosoft/auth-types/jwt v0.0.0-20210812110140-a5c48e1ab233 h1:E5AbpCMP545DVI7cEuVlvlYWEhOTUskv4+U8vtqxX7Y=
+github.com/joaosoft/auth-types/jwt v0.0.0-20210812110140-a5c48e1ab233/go.mod h1:MUESY8AsPPgrG7wusDrQXEhgfQzTk4pIZroUZKjxXKY=
+github.com/joaosoft/errors v0.0.0-20210812101433-f58fbcc4c1c8 h1:sV8arq0rZeoUcH4sY1YLrEIHUNLX0GEGrF4P77WZjVY=
+github.com/joaosoft/errors v0.0.0-20210812101433-f58fbcc4c1c8/go.mod h1:88WoG5oDStLTaG0n5e8NR0rKcugZttofMwD5cajQnTA=
+github.com/joaosoft/tag v0.0.0-20201229170853-66fd33589caa h1:Mtom8KpB+41nIBgs5f91Vi2BGtDM9GwzuYvGbAhzLPk=
+github.com/joaosoft/tag v0.0.0-20201229170853-66fd33589caa/go.mod h1:QssNFh4D+tvjpSCklcAxist6GNETThH14PVkWfsmtgs=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
