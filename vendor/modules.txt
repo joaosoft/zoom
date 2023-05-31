@@ -1,0 +1,9 @@
+# github.com/joaosoft/auth-types/jwt v0.0.0-20230531143726-6905d84fa794
+## explicit; go 1.16
+github.com/joaosoft/auth-types/jwt
+# github.com/joaosoft/errors v0.0.0-20210812101433-f58fbcc4c1c8
+## explicit; go 1.16
+github.com/joaosoft/errors
+# github.com/joaosoft/tag v0.0.0-20201229170853-66fd33589caa
+## explicit
+github.com/joaosoft/tag

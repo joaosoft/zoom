@@ -1,0 +1,5 @@
+package tag
+
+const (
+	tagValueIgnoreField = "-"
+)

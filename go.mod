@@ -1,9 +1,9 @@
 module github.com/joaosoft/zoom
 
-go 1.17
+go 1.20
 
 require (
-	github.com/joaosoft/auth-types/jwt v0.0.0-20210812110140-a5c48e1ab233
+	github.com/joaosoft/auth-types/jwt v0.0.0-20230531143726-6905d84fa794
 	github.com/joaosoft/tag v0.0.0-20201229170853-66fd33589caa
 )
 
